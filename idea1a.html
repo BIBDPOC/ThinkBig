@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="hydrated"><head>
+    <meta charset="utf-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Finapp - Mobile Template</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, mobile template, cordova, phonegap, mobile, html, responsive">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js" data-stencil-namespace="ionicons"></script><script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js" data-stencil-namespace="ionicons"></script>
+<!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+<!-- additional js -->
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.js"></script>
+<!-- <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script> -->
+    <script src="assets/js/base.js"></script>
+    <style type="text/css">
+        @keyframes throbbingSize {
+  0%   {transform:scale(1, 1)}
+  25%  {transform:scale(1.05, 1.05)}
+  50%  {transform:scale(1.1, 1.1)}
+  75%  {transform:scale(1.05, 1.05)}
+  100% {transform:scale(1, 1)}
+}
+.aaaa{
+    animation-name: throbbingSize;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+    </style>
+</head>
+
+<body class="bg-white">
+
+    
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+            </a>
+        </div>
+        <div class="pageTitle ">
+            <img src="assets/img/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="right">
+            <a href="javascript:;" class="headerButton">
+            </a>
+        </div>
+    </div>
+    
+    <!-- * App Header -->
+
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section mt-2 mb-2">
+<div class="section mt-2 mb-2">
+
+
+            <div class="listed-detail mt-3">
+                <div class="icon-wrapper">
+                    <div class="iconbox bg-success">
+                        <ion-icon name="checkmark-outline" role="img" class="md hydrated" aria-label="arrow forward outline"></ion-icon>
+                    </div>
+                </div>
+                <h3 class="text-center mt-2">Payment Sent</h3>
+            </div>
+
+            <ul class="listview flush transparent simple-listview no-space mt-3">
+                <li>
+                    <strong>Status</strong>
+                    <span class="text-success">Success</span>
+                </li>
+                <li>
+                    <strong>To</strong>
+                    <span class="name"></span>
+                </li>
+                <li>
+                    <strong>Transaction Category</strong>
+                    <span>Shopping</span>
+                </li>
+                <li>
+                    <strong>Date</strong>
+                    <span class="dateandtime"></span>
+                </li>
+                <li>
+                    <strong>Amount</strong>
+                    <h3 class="m-0 amount">$</h3>
+                </li>
+            </ul>
+
+
+        </div>
+            <div class="listed-detail mt-3 text-center">
+            	<button type="button" onclick="window.location='idea1b.html'" class="btn btn-lg btn-primary mr-1 mb-1">Done</button>
+                <!-- <h4 class="text-center mt-2">Done</h4> -->
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="#" class="item">
+            <div class="col">
+                <ion-icon name="pie-chart-outline" role="img" class="md hydrated" aria-label="pie chart outline"></ion-icon>
+                <strong>Overview</strong>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="col">
+                <ion-icon name="settings-outline" role="img" class="md hydrated" aria-label="settings outline"></ion-icon>
+                <strong>Settings</strong>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+<div class="modal-xl fade dialogbox " id="DialogIconedDanger"  tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog m-0 p-0" role="document">
+                <div class="modal-content" style="width: 90vw; max-width: 100%; padding: 0; margin: 0">
+                    <div class="modal-icon text-danger">
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title mb-2">Choose Your Rewards</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <div id="card">
+                                    
+                                <div class="front text-warning" id="cardd" style="font-size: 70px"><ion-icon name="help-circle-outline"></ion-icon></div>
+                                <div class="back text-success" style="font-size: 70px"><ion-icon name="cash-outline"></ion-icon></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="card1">
+                                <div class="front text-warning" id="cardd1" style="font-size: 70px"><ion-icon name="help-circle-outline"></ion-icon></div>
+                                <div class="back text-success" style="font-size: 70px"><ion-icon name="cash-outline"></ion-icon></div>
+                                
+                                <!-- <div class="back"></div>   -->
+                                </div>                              
+                            </div>
+                            <div class="col">
+                                <div id="card2">
+                                <div class="front text-warning" id="cardd2" style="font-size: 70px"><ion-icon name="help-circle-outline"></ion-icon></div>
+                                <div class="back text-success" style="font-size: 70px"><ion-icon name="cash-outline"></ion-icon></div>
+                                
+                                <!-- <div class="back"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<div id="toast-4" class="toast-box toast-top bg-success p-0 m-0">
+            <div class="in">
+                <div class="text p-2">
+                    100 Hadiah Points Claimed.
+                </div>
+            </div>
+        </div>
+                    <div class="modal-footer">
+                        <div class="btn-inline">
+                            <a href="#" class="btn" onclick="reset()" data-dismiss="modal">CLOSE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    
+    <script src="assets/js/lib/confetti.min.js"></script>
+    <script>
+       	var amountrandom = ["$ 120.20", "$ 50.00", "$ 10.20", "$ 79.28", "$ 259.00"];
+       	var namerandom = ["Hua Ho", "Jaya Hypermart", "Excapade", "Netcomm", "Kaizen"];
+  		var x = Math.floor((Math.random() * 5));
+  		var y = Math.ceil((Math.random() * 5) -1);
+  		$(".amount").html(amountrandom[y]);
+  		$(".dateandtime").html(new Date().toUTCString());
+  		$(".name").html(namerandom[x]);
+    </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,267 @@
+<html lang="en" class="hydrated"><head>
+    <meta charset="utf-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Finapp - Mobile Template</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, mobile template, cordova, phonegap, mobile, html, responsive">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js" data-stencil-namespace="ionicons"></script><script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js" data-stencil-namespace="ionicons"></script>
+<!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script><script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js" data-stencil-namespace="ionicons"></script><script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js" data-stencil-namespace="ionicons"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+<!-- additional js -->
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.js"></script>
+<!-- <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script> -->
+    <script src="assets/js/base.js"></script>
+    <style type="text/css">
+        @keyframes throbbingSize {
+  0%   {transform:scale(1, 1)}
+  25%  {transform:scale(1.05, 1.05)}
+  50%  {transform:scale(1.1, 1.1)}
+  75%  {transform:scale(1.05, 1.05)}
+  100% {transform:scale(1, 1)}
+}
+.aaaa{
+    animation-name: throbbingSize;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+    </style>
+</head>
+
+<body class="bg-white">
+
+    
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary" style="height: 10vh">
+<img src="assets/img/header.png" alt="logo" class="logo" style="
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    padding: 0;
+">  
+    </div>
+    
+    <!-- * App Header -->
+
+
+    <!-- App Capsule -->
+<div id="appCapsule m-0 h-100 p-0" style="
+    margin-top: 10vh;
+    height: 90vh;
+">
+
+    <div class="section p-0 h-100 container" style="">
+
+
+            <div class="p-0 m-0 w-100 h-100 row align-items-center">
+                <img src="assets/img/menu.png" style="object-fit: contain;object-position: center;" class="h-100 w-100">   
+                <a href="#" data-toggle="modal" data-target="#DialogIconedDanger">
+                    </a>                
+                <!-- * timeline -->
+            </div>
+        
+
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+    <div id="toast-3" class="toast-box toast-top show mt-2 bg-secondary" style="
+    flex-direction: column;
+    background: rgba(200, 200, 200, 0.85)!important;
+    height: 17%;
+">
+            <div class="w-100">
+                
+                <div class="text mt-2">
+<div class="progress" style="
+    height: 3vh;
+">
+                        <div class="progress-bar" role="progressbar" style="width: 100%;height:100%;font-size: 16px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">7/7 Transactions Made</div>
+                    </div>                </div>
+            </div> 
+            <button type="button" class="btn btn-lg btn-primary mt-2 w-50 close-button" data-toggle="modal" data-target="#DialogIconedDanger" style="
+    font-size: larger;
+">Redeem!</button>
+        </div>
+
+
+    <!-- App Bottom Menu -->
+
+    <!-- * App Bottom Menu -->
+
+<div class="modal-xl fade dialogbox " id="DialogIconedDanger" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog m-0 p-0" role="document">
+                <div class="modal-content" style="width: 90vw; max-width: 100%; padding: 0; margin: 0">
+                    <div class="modal-icon text-danger">
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title mb-2">Choose Your Rewards</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <div id="card" style="position: relative; transform-style: preserve-3d;">
+                                    
+                                <div class="front text-warning" id="cardd" style="font-size: 70px; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; height: 100%; width: 100%; transition: all 0.5s ease-out 0s;"><ion-icon name="help-circle-outline" role="img" class="md hydrated" aria-label="help circle outline" style="backface-visibility: hidden;"></ion-icon></div>
+                                <div class="back text-success" style="font-size: 70px; backface-visibility: hidden; transform-style: preserve-3d; position: relative; z-index: 0; height: 100%; width: 100%; transform: rotateY(-180deg); transition: all 0.5s ease-out 0s;"><ion-icon name="cash-outline" role="img" class="md hydrated" aria-label="cash outline" style="backface-visibility: hidden;"></ion-icon></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="card1" style="position: relative; transform-style: preserve-3d;">
+                                <div class="front text-warning" id="cardd1" style="font-size: 70px; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; height: 100%; width: 100%; transition: all 0.5s ease-out 0s;"><ion-icon name="help-circle-outline" role="img" class="md hydrated" aria-label="help circle outline" style="backface-visibility: hidden;"></ion-icon></div>
+                                <div class="back text-success" style="font-size: 70px; backface-visibility: hidden; transform-style: preserve-3d; position: relative; z-index: 0; height: 100%; width: 100%; transform: rotateY(-180deg); transition: all 0.5s ease-out 0s;"><ion-icon name="cash-outline" role="img" class="md hydrated" aria-label="cash outline" style="backface-visibility: hidden;"></ion-icon></div>
+                                
+                                <!-- <div class="back"></div>   -->
+                                </div>                              
+                            </div>
+                            <div class="col">
+                                <div id="card2" style="position: relative; transform-style: preserve-3d;">
+                                <div class="front text-warning" id="cardd2" style="font-size: 70px; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; height: 100%; width: 100%; transition: all 0.5s ease-out 0s;"><ion-icon name="help-circle-outline" role="img" class="md hydrated" aria-label="help circle outline" style="backface-visibility: hidden;"></ion-icon></div>
+                                <div class="back text-success" style="font-size: 70px; backface-visibility: hidden; transform-style: preserve-3d; position: relative; z-index: 0; height: 100%; width: 100%; transform: rotateY(-180deg); transition: all 0.5s ease-out 0s;"><ion-icon name="cash-outline" role="img" class="md hydrated" aria-label="cash outline" style="backface-visibility: hidden;"></ion-icon></div>
+                                
+                                <!-- <div class="back"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<div id="toast-4" class="toast-box toast-top bg-success p-0 m-0">
+            <div class="in">
+                <div class="text p-2 reward">
+                </div>
+            </div>
+        </div>
+                    <div class="modal-footer">
+                        <div class="btn-inline">
+                            <a href="#" class="btn" onclick="reset()" data-dismiss="modal">CLOSE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    
+    <script src="assets/js/lib/confetti.min.js"></script>
+    <script>
+        var rewards = ["$100 Hua Ho Voucher", "$40 Jaya Hypermart Voucher", "$20 Progresif TopUp", "$50 Netcomm Voucher", "$100 Kaizen Voucher", "1000 Hadiah Points"];
+        var x = Math.floor((Math.random() * 6));
+        $(".reward").html(rewards[x]);
+        // $(document).load(()=>{
+        let confetti = new Confetti("card");
+        let confetti1 = new Confetti("card1");
+        let confetti2 = new Confetti("card2");
+    confetti.setCount(100);
+confetti.setSize(1.5);
+confetti.setPower(40);
+confetti.setFade(false);
+confetti.destroyTarget(false);
+ confetti1.setCount(100);
+confetti1.setSize(1.5);
+confetti1.setPower(40);
+confetti1.setFade(false);
+confetti1.destroyTarget(false);
+ confetti2.setCount(100);
+confetti2.setSize(1.5);
+confetti2.setPower(40);
+confetti2.setFade(false);
+confetti2.destroyTarget(false);
+        $("#card").flip();
+        $("#card1").flip();
+        $("#card2").flip();
+ 
+        function reset(){
+                let confetti = new Confetti("card");
+        let confetti1 = new Confetti("card1");
+        let confetti2 = new Confetti("card2");
+    confetti.setCount(100);
+confetti.setSize(1.5);
+confetti.setPower(40);
+confetti.setFade(false);
+confetti.destroyTarget(false);
+ confetti1.setCount(100);
+confetti1.setSize(1.5);
+confetti1.setPower(40);
+confetti1.setFade(false);
+confetti1.destroyTarget(false);
+ confetti2.setCount(100);
+confetti2.setSize(1.5);
+confetti2.setPower(40);
+confetti2.setFade(false);
+confetti2.destroyTarget(false);
+$("#card").on('click');
+            $("#card1").on('click');
+            $("#card2").on('click');
+        $("#card").flip();
+        $("#card1").flip();
+        $("#card2").flip();
+        }
+
+        $("#card").click(()=>{
+            toastbox('toast-4', 7000);
+            $("#card").off('click');
+            $("#card1").off('click');
+            $("#card2").off('click');
+            setTimeout(()=>{
+            confetti1.setSize(0);
+            confetti1.setPower(0);
+            confetti1.setCount(0);
+
+        },1000)
+            // $("#card").click(function(){return false;});
+            // $("#card1").click(function(){return false;});
+            // $("#card2").click(function(){return false;});
+        });
+        $("#card1").click(()=>{
+            toastbox('toast-4', 7000);
+            $("#card").off('click');
+            $("#card1").off('click');
+            $("#card2").off('click');
+            setTimeout(()=>{
+            confetti1.setSize(0);
+            confetti1.setPower(0);
+            confetti1.setCount(0);
+
+        },1000)
+            // $("#card").click(function(){return false;});
+            // $("#card1").click(function(){return false;});
+            // $("#card2").click(function(){return false;});
+        });
+        $("#card2").click(()=>{
+            toastbox('toast-4', 7000);
+            $("#card").off('click');
+            $("#card1").off('click');
+            $("#card2").off('click');
+            setTimeout(()=>{
+            confetti1.setPower(0);
+            confetti1.setSize(0);
+            confetti1.setCount(0);
+
+        },1000)
+            // $("#card").click(function(){return false;});
+            // $("#card1").click(function(){return false;});
+            // $("#card2").click(function(){return false;});
+        });
+    </script><canvas width="1368" height="1504" style="position: fixed; top: 0px; left: 0px; width: calc(100%); height: calc(100%); margin: 0px; padding: 0px; z-index: 999999999; pointer-events: none;"></canvas><canvas width="1368" height="1504" style="position: fixed; top: 0px; left: 0px; width: calc(100%); height: calc(100%); margin: 0px; padding: 0px; z-index: 999999999; pointer-events: none;"></canvas><canvas width="824" height="1504" style="position: fixed; top: 0px; left: 0px; width: calc(100%); height: calc(100%); margin: 0px; padding: 0px; z-index: 999999999; pointer-events: none;"></canvas>
+
+
+
+
+
+</body></html>
